@@ -4,127 +4,67 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
-html {
-  height: 100%;
-}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-body {
-  font-family: 'Fjalla One', sans-serif;
-  background: linear-gradient(to bottom, #fefefa 0%, #fefefa 100%);
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="pages.css">
 
-.container {
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  display: block;
-  position: absolute;
-  max-width: 225px;
-}
 
-.button {
-  float: left;
-  position: relative;
-  bottom: -65px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-10deg);
-  color: #428BCA;
-  text-transform: uppercase;
-  font-size:large;
-  opacity: 0;
-  visibility: hidden;
-  cursor: pointer;
-}
-.button span {
-  transform: skew(-10deg);
-  display: block;
-  height: 20px;
-  float: left;
-  font-size: x-large;
-  text-shadow: #462066 1px 1px, #462066 2px 2px, #462066 3px 3px, #462066 4px 4px;
-}
+    <title>This is me!</title>
+  </head>
+  <body>
+    <div class="text-right mr-5">
 
-h1 {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 42px;
-  margin: 0;
-  line-height: 47px;
-  letter-spacing: 2px;
-}
+      <a href="mainpage.html"><button type="button" class="btn buttonmain mr-2 mt-3 rounded-0">MAINPAGE</button> </a>
+      <a href="me.html"><button type="button" class="btn buttonme mr-2 mt-3 rounded-0">ME</button> </a>
+      <a href="project.html"><button type="button" class="btn buttonproject mr-2 mt-3 rounded-0">PROJECTS</button> </a>
+      <a href="blog.html"><button type="button" class="btn buttonblog mr-2 mt-3 rounded-0">POEMS</button> </a>
+      <a href="contact.html"><button type="button" class="btn buttoncontact mr-2   mt-3 rounded-0">CONTACT</button> </a>
+    </div>
 
-.title {
-  transform: translateX(-50%) rotate(-10deg);
-  display: block;
-  float: left;
-  left: 50%;
-  position: relative;
-}
-.title span {
-  transform: skew(-10deg);
-  display: block;
-  float: left;
-  text-shadow: #462066 1px 1px, #462066 2px 2px, #462066 3px 3px, #462066 4px 4px, #462066 5px 5px, #462066 6px 6px;
-  min-width: 15px;
-  min-height: 15px;
-  position: relative;
-}
+    <div class="container" id="spacecontainer">
+        <div class="row">
+          <div class="col">
+          </div>
+          <div class="col-4">
+              <img src="images/flower2gif.gif" class="rounded float-right d-block" width="400px">
+          </div>
+          <div class="col-4">
+              <p class="bigfont"> This is me, Sarah </p> <p><br>
+                I am a graduate student at New York University, <br>
+                I am currently learning to code in Python and C++, <br> but interested in
+                many other languages such as C#, JavaScript or SQL. <br><br>
+                I like to play video game, especially survival game called '7 days to die'
+                so if you ever want to play with me, my steam account is 'muddy911'.
+                <br><br>Thank you, and hope enjoy my website!
+                <br><br><br>
+                02. 27. 2019
+            
+                <br> </p>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    
 
-.title:nth-child(1) {
-  color: #FF7A5A;
-}
-.title:nth-child(2) {
-  color: #00AAA0;
-}
-.title:nth-child(3) {
-  color: #FFB85F;
-}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
 
-            </style>
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"> 
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js">
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js">
-            </script>
-        <title>WELCOME TO SARAH'S WEBPAGE</title>   
-        </head>
-    <body>
-    <section class="container">
-        <h1>
-          <span class="title">Welcome To</span>
-          <span class="title">Sarah's</span>
-          <span class="title">Website!!!</span>
-        </h1>
-        
-        <div class="button">ENTER</div>
-      </section>
-      <script type="text/javascript">$(document).ready(function() {
-            $(".title").lettering();
-            $(".button").lettering();
-          });
-        
-          $(document).ready(function() {
-            animation();
-          }, 1000);
-          
-          $('.button').click(function() {
-            window.location.href='me.html';
-          });
-          
-          
-          function animation() {
-            var title1 = new TimelineMax();
-            title1.to(".button", 0, {visibility: 'hidden', opacity: 0})
-            title1.staggerFromTo(".title span", 0.5, 
-            {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
-            {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
-            title1.to(".button", 0.2, {visibility: 'visible' ,opacity: 1})
-          }
-          </script>
-      </body>
-
-      </html>
+  <footer class="text-center footer mt-5">
+      <a href="https://www.twitch.tv/muddy5" class="fa fa-twitch mb-3 text-center"></a>
+      <a href="https://github.com/muddyyy/Project" class="fa fa-github mb-3 text-center"></a>
+      <a href="https://www.linkedin.com/in/sarah-kim-3104b9174/" class="fa fa-linkedin mb-3 text-center"></a>
+      <a href="http://www.instagram.com/muddy_" class="fa fa-instagram mb-3 text-center"></a>
+    <p> &copy; 2019 Sarah Kim All Rights Reserved. </p>
+  </footer>
+</html>
