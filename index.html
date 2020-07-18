@@ -1,0 +1,132 @@
+# sarahekim53.github.io
+Project Website
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Fjalla One', sans-serif;
+  background: linear-gradient(to bottom, #fefefa 0%, #fefefa 100%);
+}
+
+.container {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: block;
+  position: absolute;
+  max-width: 225px;
+}
+
+.button {
+  float: left;
+  position: relative;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-10deg);
+  color: #428BCA;
+  text-transform: uppercase;
+  font-size:large;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+.button span {
+  transform: skew(-10deg);
+  display: block;
+  height: 20px;
+  float: left;
+  font-size: x-large;
+  text-shadow: #462066 1px 1px, #462066 2px 2px, #462066 3px 3px, #462066 4px 4px;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 42px;
+  margin: 0;
+  line-height: 47px;
+  letter-spacing: 2px;
+}
+
+.title {
+  transform: translateX(-50%) rotate(-10deg);
+  display: block;
+  float: left;
+  left: 50%;
+  position: relative;
+}
+.title span {
+  transform: skew(-10deg);
+  display: block;
+  float: left;
+  text-shadow: #462066 1px 1px, #462066 2px 2px, #462066 3px 3px, #462066 4px 4px, #462066 5px 5px, #462066 6px 6px;
+  min-width: 15px;
+  min-height: 15px;
+  position: relative;
+}
+
+.title:nth-child(1) {
+  color: #FF7A5A;
+}
+.title:nth-child(2) {
+  color: #00AAA0;
+}
+.title:nth-child(3) {
+  color: #FFB85F;
+}
+
+            </style>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"> 
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js">
+            </script>
+        <title>WELCOME TO SARAH'S WEBPAGE</title>   
+        </head>
+    <body>
+    <section class="container">
+        <h1>
+          <span class="title">Welcome To</span>
+          <span class="title">Sarah's</span>
+          <span class="title">Website!!!</span>
+        </h1>
+        
+        <div class="button">ENTER</div>
+      </section>
+      <script type="text/javascript">$(document).ready(function() {
+            $(".title").lettering();
+            $(".button").lettering();
+          });
+        
+          $(document).ready(function() {
+            animation();
+          }, 1000);
+          
+          $('.button').click(function() {
+            window.location.href='me.html';
+          });
+          
+          
+          function animation() {
+            var title1 = new TimelineMax();
+            title1.to(".button", 0, {visibility: 'hidden', opacity: 0})
+            title1.staggerFromTo(".title span", 0.5, 
+            {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
+            {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
+            title1.to(".button", 0.2, {visibility: 'visible' ,opacity: 1})
+          }
+          </script>
+      </body>
+
+      </html>
