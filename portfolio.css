@@ -64,6 +64,15 @@ button.buttonproject:hover{
     background-color: #00AAA0;
 }
 
+button.buttoninterests{
+    color: #9433FF ;
+    border: none;
+}
+
+button.buttoninterests:hover{
+    background-color: #9433FF;
+}
+
 
 button.buttoncontact{
     color: #428BCA;
