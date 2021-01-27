@@ -38,7 +38,6 @@
                 <br>
                 <h6 class="text-center text-black"> Projects </h6>
             </div>
-
             <div class="col-lg-6">
                 <a href="dataProjects.html">
                     <img src="images/DS.JPG" class="rounded mx-auto d-block" alt="Responsive image" width="300px">
@@ -52,48 +51,36 @@
     <h1 class="display-5 text-center mt-5 mb-1"> Right now, I'm learning about ... </h1>
     <div class="container">
         <div class="row">
-            <div class="col-4">
+            <div class="col-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Telegram to Database</h5>
                         <h6 class="card-subtitle mb-3 text-muted">Python<br></h6>
-                        <p class="card-text">  So I've been sharing some files over Telegram for the volunteer works,
-                            and I thought maybe I could create something to automate this. In this project,
-                            I am planning to either incorporate AWS or PySpark to process the data before
-                            I transfer them to the database. I am not quite sure how all these will work together,
-                            but I plan to figure it out step by step! </p>
-                        <p class="card-text"><small class="text-muted">Last updated 1/15/2020</small></p>
+                        <p class="card-text">  So, a bit of update on my current project. 😊 <br>
+                            I plan to get all the documents from the Telegram chat using the Telegram bot.
+                            And I'm using the Python Watchdog library to check any new files are created,
+                            and if so, it will trigger a function to organize these files into the subfolders.
+                            Then it will trigger another function to upload these files into S3 buckets in AWS.
+                            Once the files get to the bucket, I will use AWS Lambda to process,
+                            such as cleaning null values and transferring them to the RedShift database. </p>
+                        <a href="https://github.com/saraheunjikim/Telegram-Database" class="btn btn-outline-info">Go to Project</a>
+                        <p class="card-text"><small class="text-muted">Last updated 1/26/2021</small></p>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Apache Hadoop & Spark</h5>
-                        <h6 class="card-subtitle mb-3 text-muted">Udemy<br>
-                            The Ultimate Hands-On Hadoop, <br>
-                            Taming Big Data with Apache Spark and Python</h6>
-                        <p class="card-text">I bought the course! I am so excited.
-                            I've worked with a few tools such as MapReduce and whatnot, but
-                            I wanted to take a full online to learn more about it to start some
-                            hands-on projects! I am super excited to do projects using Hadoop.
-                        </p>
-                        <p class="card-text"><small class="text-muted">Last updated 12/28/2020</small></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
+
+            <div class="col-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Amazon Web Services</h5>
                         <h6 class="card-subtitle mb-3 text-muted">Udemy<br>
                             Ultimate AWS Certified Developer Associate 2021</h6>
-                        <p class="card-text">I've been starting taking this course to learn more about AWS!
-                            I'm also working on building a data pipeline using S3, Lambda, and RedShift.
-                            I thought about scraping data from online and automatically uploads to the S3 bucket,
-                            then batch process the data using Lambda,
-                            and transfer the clean data to a data warehouse in RedShift. </p>
-                        <p class="card-text"><small class="text-muted">Last updated 12/23/2020</small></p>
+                        <p class="card-text">I'm almost done with this course;
+                            I've been getting more familiar with the roles, policies, and different AWS services.
+                            I think my favorite AWS service so far is Lambda and EC2. There are so many various services,
+                            so I don't think I can do projects for every service, but I'm hoping to use some of these services
+                            in practical settings. 🤞🤞🤞</p>
+                        <p class="card-text"><small class="text-muted">Last updated 1/26/2021</small></p>
                     </div>
                 </div>
             </div>
@@ -132,14 +119,16 @@
             <div class="col-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">YouTube Downloader</h5>
-                        <h6 class="card-subtitle mb-3 text-muted">Python</h6>
-                        <p class="card-text">I created a youtube downloading program using Python awhile ago,
-                            and I finally finished it! I added a new interface, and now a user can
-                            search for videos and get more information on selected video, and download the selected
-                            video! <br> <br> Please click the button to go to the GitHub repo.</p>
-                        <a href="https://github.com/saraheunjikim/Youtube-Downloader" class="btn btn-outline-info">Go to Project</a>
-                        <p class="card-text"><small class="text-muted">Last updated 12/26/2020</small></p>
+                        <h5 class="card-title">Apache Hadoop & Spark</h5>
+                        <h6 class="card-subtitle mb-3 text-muted">Udemy<br>
+                            The Ultimate Hands-On Hadoop, <br>
+                            Taming Big Data with Apache Spark and Python</h6>
+                        <p class="card-text">I bought the course! I am so excited.
+                            I've worked with a few tools such as MapReduce and whatnot, but
+                            I wanted to take a full online to learn more about it to start some
+                            hands-on projects! I am super excited to do projects using Hadoop.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 12/28/2020</small></p>
                     </div>
                 </div>
             </div>
@@ -151,15 +140,19 @@
         <div class="card mb-3">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="images/DS3.jpg" class="card-img" alt="...">
+                    <img src="images/online.jpg" class="card-img" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Dark Souls 3</h5>
-                        <p class="card-text"> I am playing one of my favorite games again!!<br>
-                            I haven't played for awhile, so I'm a bit rusty, but I've been playing it every weekend.
-                            <br> Also, I cannot wait to get PS5 and play Demon's Souls.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 1/12/2021</small></p>
+                        <h5 class="card-title">Online Mental Health Counseling</h5>
+                        <p class="card-text"> Since the lockdown, I found how many people have different mental illnesses. <br>
+                            Although I am no expert or professional in mental health, <br>
+                            I have been volunteering through online messengers <br>
+                            to listen to other people's problems and stories. <br> Even though I cannot give them solutions,
+                            I was happy to listen to them and comfort them. <br>I wish to continue this,
+                            even after the COVID lock down is over.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 1/26/2021</small></p>
                     </div>
                 </div>
             </div>
@@ -167,18 +160,16 @@
         <div class="card mb-3">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="images/2021.jpg" class="card-img" alt="...">
+                    <img src="images/DS2.jpg" class="card-img" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Happy New Years!</h5>
-                        <p class="card-text"> 2021 is here. I have new year resolutions. <br>
-                            I'm planning to lose 10 lbs. Yes, I've been saying this for ever.
-                            But I'm very serious now. <br>
-                            Also, I'm going to find a job, where I can work with different challenges.<br>
-                            A place, where I can never stop learning and growing to be a better person!! <br>
-                        </p>
-                        <p class="card-text"><small class="text-muted">Last updated 1/10/2021</small></p>
+                        <h5 class="card-title">Dark Souls 2</h5>
+                        <p class="card-text"> I'm now playing my least favorite Dark souls series: Dark Souls 2 Scholar of the First Sin. <br>
+                            This game is just so long; I actually never finished this game. <br>
+                            I mean, I saw the ending, but I didn't fight all the bosses. <br>
+                            I'm starting to play from the beginning, but I cannot guarantee that I will finish it. 😂
+                        <p class="card-text"><small class="text-muted">Last updated 1/26/2021</small></p>
                     </div>
                 </div>
             </div>
